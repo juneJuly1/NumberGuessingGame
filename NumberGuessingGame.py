@@ -14,4 +14,19 @@ else:
 
 # Generating a random number with max_range being inclusive.
 random_number = random.randint(0, max_range)
-print(random_number)
+
+# User guessing and validating user input.
+while True:
+    user_guess = input('Make a guess: ')
+
+    if user_guess.isdigit():
+        user_guess = int(user_guess)
+    else:
+        print('Please type a number next time.')
+        continue
+
+    if user_guess == random_number:
+        print('Correct!')
+        break
+    else:
+        print('Try again!')
