@@ -27,9 +27,10 @@ while True:
         print('Please type a number next time.')
         continue
 
-
     if user_guess == random_number:
         print('Correct!')
         break
     else:
         print('Try again!')
+
+print('You got it in', guesses, 'guesses.')
